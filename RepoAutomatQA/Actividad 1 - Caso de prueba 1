@@ -1,0 +1,17 @@
+# Solicitar datos al usuario
+nombre = input("Ingrese su nombre: ")
+edad = input("Ingrese su edad: ")
+profesion = input("Ingrese su profesión: ")
+
+# Mostrar mensaje personalizado
+print(f"Hola {nombre}, tienes {edad} años y eres {profesion}.")
+contador = 0
+numero = 1
+
+while contador < 10:
+    if numero % 2 == 0:
+        print(numero)
+        contador += 1
+
+    numero += 1
+# condicion - if numero % 2 == 0:

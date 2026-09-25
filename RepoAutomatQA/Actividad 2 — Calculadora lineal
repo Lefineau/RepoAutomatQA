@@ -1,0 +1,51 @@
+def sumar(a, b):
+    return a + b
+
+
+def restar(a, b):
+    return a - b
+
+
+def multiplicar(a, b):
+    return a * b
+
+
+def dividir(a, b):
+    if b == 0:
+        raise ZeroDivisionError("No se puede dividir por cero.")
+    return a / b
+
+
+try:
+    numero1 = float(input("Ingrese el primer número: "))
+    numero2 = float(input("Ingrese el segundo número: "))
+
+    print("Suma:", sumar(numero1, numero2))
+    print("Resta:", restar(numero1, numero2))
+    print("Multiplicación:", multiplicar(numero1, numero2))
+    print("División:", dividir(numero1, numero2))
+
+except ValueError:
+    print("Error: debe ingresar valores numéricos.")
+except ZeroDivisionError as error:
+    print(f"Error: {error}")
+    
+    
+# Flujo Git local
+ 
+#git init
+
+#git add .
+#git commit -m "Inicializar calculadora lineal"
+
+#git checkout -b feature/calculadora-lineal
+
+#git add .
+#git commit -m "Refactorizar calculadora en funciones"
+
+#git add .
+#git commit -m "Agregar manejo de excepciones"
+
+#git checkout main
+
+#git merge feature/calculadora-lineal
